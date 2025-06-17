@@ -27,7 +27,7 @@ This application is being developed using the following core technologies:
 - **Database:** PostgreSQL, pgvector
 - **Frontend Templating:** Django Templates
 - **Styling:** Tailwind CSS
-- **Depolyment:** Docker, AWS EC2-
+- **Deployment:** Docker, AWS EC2-
 
 ### Testing Stack
 
