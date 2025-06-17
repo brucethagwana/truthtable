@@ -31,7 +31,7 @@ This application is being developed using the following core technologies:
 
 ### Testing Stack
 
-Our testing strategy employs a multi-layered approach to ensure the robustness, reliability, and user-friendliness of the 'truth table' App project. We utilize a combination of unit, integration, API, and ene-to-end tests, leveraging specific tools for each level.
+Our testing strategy employs a multi-layered approach to ensure the robustness, reliability, and user-friendliness of the 'truth table' App project. We utilize a combination of unit, integration, API, and end-to-end tests, leveraging specific tools for each level.
 
 - **Unit & Integration Testing (Backend - Pytest-Django):**
   - Goal: To verify individual components (units) of the Django backend work as expected in isolation, and that integrated modules function correctly together.
@@ -41,6 +41,7 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
   * Tool: Postman
 - **End-to-End Testing (Frontend & User Flows - Cypress):**-
   - Goal: To simulate real user interactions and verify that the entire application, from frontend UI to backend logic and database, functions correctly as a cohesive system. This ensures critical user journeys are unbroken.
+  * Tool: Cypress
 
 ### Key Development Milestones
 
