@@ -12,9 +12,9 @@ For example, do you want a 'truth table' for:
 > P OR NOT Q
 > (P IF THEN Q) IF AND ONLY IF (NOT P OR Q)
 
-Once you provide the expression, I can construct the truth table showing all possible truth values (TRUE|T or FALSE|F) for the variables and the truth value of the entire expression, which is obtained.
+Once you provide the expression, I can construct the 'truth table' showing all possible truth values (TRUE|T or FALSE|F) for the variables and the truth value of the entire expression, which is obtained.
 
-## APP Development & Refinement Status
+## App Development & Refinement Status
 
 This section provides an overview of our progress in the development and refinement phase. We aim for transparency and regular updates here.
 
