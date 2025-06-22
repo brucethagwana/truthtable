@@ -8,8 +8,8 @@ To create a 'truth table', I have to know:
 
 For example, do you want a 'truth table' for:
 
-> P AND Q
-> P OR NOT Q
+> P AND Q,
+> P OR NOT Q,
 > (P IF THEN Q) IF AND ONLY IF (NOT P OR Q)
 
 Once you provide the expression, I can construct the 'truth table' showing all possible truth values (TRUE|T or FALSE|F) for the variables and the truth value of the entire expression, which is obtained.
