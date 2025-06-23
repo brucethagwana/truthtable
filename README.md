@@ -98,3 +98,7 @@ Our primary focus for this sprint is to finalize the core business logic functio
 ### Looking Ahead
 
 Our next major goal is to achieve a stable beta version by [10/25/2025], followed by extensive user testing.
+
+## License / Credits
+
+Copyright (c) 2025 Bruce R. Thagwana 
