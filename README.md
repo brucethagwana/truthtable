@@ -101,4 +101,4 @@ Our next major goal is to achieve a stable beta version by [10/25/2025], followe
 
 ## License / Credits
 
-Copyright (c) 2025 Bruce R. Thagwana 
+Copyright © 2025 Bruce R. Thagwana. All rights reserved. 
