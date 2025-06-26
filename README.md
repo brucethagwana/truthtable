@@ -1,4 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Visual%20Studio%20Code-%230076B8?style=for-the-badge&logo=Visual%20Studio%20Code&labelColor=%23FFFFFF)
+![Static Badge](https://img.shields.io/badge/git%20-%23F05032?style=for-the-badge&logo=git&labelColor=%23FFFFFF)
 ![Static Badge](https://img.shields.io/badge/Python-%233776AB?style=for-the-badge&logo=Python&logoColor=%234584b6&labelColor=%23ffde57)
 ![Static Badge](https://img.shields.io/badge/HTML5-%23E34F26?style=for-the-badge&logo=HTML5&labelColor=%23FFFFFF)
 ![Static Badge](https://img.shields.io/badge/Django-%23092E20?style=for-the-badge&logo=Django)
