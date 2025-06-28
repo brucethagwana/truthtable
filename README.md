@@ -69,7 +69,7 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
 
   - User Authentication (Sign-up, Login, Password Reset): Completed
   - Data Persistence: Completed
-  - Core Business Logic Fuctionality: In Progress (Estimated 55% done)
+  - Core Business Logic Functionality: In Progress (Estimated 55% done)
   - User Profile Management: In Progress
 
 - **UI/UX Design & Integration:**
