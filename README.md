@@ -88,6 +88,7 @@ Our primary focus for this sprint is to finalize the core business logic functio
 
 ### Latest Updates
 
+- **June 30, 2025:** Work on the Truth Table project has been temporarily suspended.
 - **June 17, 2025:** Completed integration for data persistence.
 - **June 13, 2025:** Addressed critical login bug affecting certain user accounts.
 - **June 9, 2025:** Began work on real-time core business logic functionality.
