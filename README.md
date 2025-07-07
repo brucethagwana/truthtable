@@ -47,7 +47,7 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
 - **API Testing (Postman):**
   - Goal: To ensure that the backend API endpoints function correctly, return expected data formats, handle various HTTP methods, and enforce security policies. This bridges the gap between backend logic and frontend consumption.
   * Tool: `Postman`
-- **End-to-End Testing (Frontend & User Flows - Cypress):**-
+- **End-to-End Testing (Frontend & User Flows - Cypress):**
   - Goal: To simulate real user interactions and verify that the entire application, from frontend UI to backend logic and database, functions correctly as a cohesive system. This ensures critical user journeys are unbroken.
   * Tool: `Cypress`
 
