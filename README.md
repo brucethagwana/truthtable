@@ -43,7 +43,7 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
 
 - **Unit & Integration Testing (Backend - Pytest-Django):**
   - Goal: To verify individual components (units) of the Django backend work as expected in isolation, and that integrated modules function correctly together.
-  * Tool: `pytest` with `pytest-django`
+  * Tool: `Pytest` with `Pytest-Django`
 - **API Testing (Postman):**
   - Goal: To ensure that the backend API endpoints function correctly, return expected data formats, handle various HTTP methods, and enforce security policies. This bridges the gap between backend logic and frontend consumption.
   * Tool: `Postman`
