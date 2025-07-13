@@ -32,7 +32,7 @@ This application is being developed using the following core technologies:
 
 - **Backend Framework:** `Django`
 - **Primary Language:** `Python`
-- **Database:** `PostgreSQL`, `pgvector`
+- **Database:** `PostgreSQL`, `PGVector`
 - **Frontend Templating:** `Django Templates`
 - **Styling:** `Tailwind CSS`
 - **Deployment:** `Docker`, `AWS EC2`
