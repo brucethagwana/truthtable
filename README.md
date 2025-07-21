@@ -10,7 +10,6 @@
 ![Static Badge](https://img.shields.io/badge/TensorFlow-%23FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=%23FF6F00&labelColor=%23FFFFFF)
 ![Static Badge](https://img.shields.io/badge/Pytorch-%23EE4C2C?style=for-the-badge&logo=Pytorch&logoColor=%23FF6F00&labelColor=%23FFFFFF)
 
-<<<<<<< HEAD
 # Truth Table: A Logic Expression Evaluator
 
 A **truth table** is a fundamental tool in logic and mathematics, used to determine the functional values of logical expressions based on the truth values of their component variables. It helps visualize how the truth or falsity of a compound statement is derived from the truth or falsity of its simpler parts.
@@ -18,17 +17,6 @@ A **truth table** is a fundamental tool in logic and mathematics, used to determ
 To generate a truth table, you simply provide a logical expression or statement, such as:
 
 > `P AND Q` > `P OR NOT Q` > `(P IF THEN Q) IF AND ONLY IF (NOT P OR Q)`
-=======
-
-# Truth Table: A Logic Expression Evaluator
-
-A **truth table** is a fundamental tool in logic and mathematics, used to determine the functional values of logical expressions based on the truth values of their component variables. It helps visualize how the truth or falsity of a compound statement is derived from the truth or falsity of its simpler parts.
-
-To generate a truth table, you simply provide a logical expression or statement, such as:
-> `P AND Q`
-> `P OR NOT Q`
-> `(P IF THEN Q) IF AND ONLY IF (NOT P OR Q)`
->>>>>>> 88be141d0fec9dd93954fa2687e2596e870cf7d5
 
 Once you provide the expression, our tool constructs the `truth table` displaying all possible truth values (**TRUE[T] or FALSE[F]**) for the variables and the resulting truth value for the entire expression.
 
@@ -64,39 +52,27 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
 ### Key Development Milestones
 
 - **Core Feature Implementation:**
-<<<<<<< HEAD
 
-=======
->>>>>>> 88be141d0fec9dd93954fa2687e2596e870cf7d5
   - User Authentication (Sign-up, Login, Password Reset): ✅ **Completed**
   - Data Persistence: ✅ **Completed**
   - Core Business Logic Functionality: 🚧 **In Progress** (Estimated 55% done)
   - User Profile Management: 🚧 **In Progress**
 
 - **UI/UX Design & Integration:**
-<<<<<<< HEAD
 
-=======
->>>>>>> 88be141d0fec9dd93954fa2687e2596e870cf7d5
   - Initial Wireframes & Mockups: 🚧 **In Progress**
   - High-Fidelity UI Design: 🚧 **In Progress** (Feedback currently being integrated)
   - Front-end Component Development: 🚧 **In Progress** (Estimated 40% done)
   - Responsive Design Adaptation: ❌ **Planned**
 
 - **Bug Fixing & Performance Optimization:**
-<<<<<<< HEAD
 
-=======
->>>>>>> 88be141d0fec9dd93954fa2687e2596e870cf7d5
   - Initial Bug Bash & Reporting: ✅ **Completed**
   - Critical Bug Fixes (Release Blocker): 🚧 **In Progress**
   - Performance Profiling & Optimization: ❌ **Planned**
 
 - **Testing Phase:**
-<<<<<<< HEAD
 
-=======
->>>>>>> 88be141d0fec9dd93954fa2687e2596e870cf7d5
   - Unit Tests for Core Business Logic: 🚧 **In Progress** (55% coverage)
   - Integration Tests for API Endpoints: 🚧 **In Progress** (Targeting 60% coverage by [9/15/2025])
   - User Acceptance Testing (UAT) Prep: ❌ **Not Started**
@@ -132,8 +108,4 @@ Our next major goal is to achieve a stable beta version by [10/25/2025], followe
 
 ## License / Credits
 
-<<<<<<< HEAD
 Copyright © 2025 Bruce R. Thagwana. All rights reserved.
-=======
-Copyright © 2025 Bruce R. Thagwana. All rights reserved. 
->>>>>>> 88be141d0fec9dd93954fa2687e2596e870cf7d5
