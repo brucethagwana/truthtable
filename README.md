@@ -16,7 +16,7 @@ A **truth table** is a fundamental tool in logic and mathematics, used to determ
 
 To generate a truth table, you simply provide a logical expression or statement, such as:
 
-> `P AND Q` > `P OR NOT Q` > `(P IF THEN Q) IF AND ONLY IF (NOT P OR Q)`
+`P AND Q` > `P OR NOT Q` > `(P IF THEN Q) IF AND ONLY IF (NOT P OR Q)`
 
 Once you provide the expression, our tool constructs the `truth table` displaying all possible truth values (**TRUE[T] or FALSE[F]**) for the variables and the resulting truth value for the entire expression.
 
