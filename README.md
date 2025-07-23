@@ -5,6 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/Django-%23092E20?style=for-the-badge&logo=Django)
 ![Static Badge](https://img.shields.io/badge/PostgreSQL-%234169E1?style=for-the-badge&logo=PostgreSQL&logoColor=%23FFFFFF)
 ![Static Badge](https://img.shields.io/badge/PGVector-%23123456?style=for-the-badge&logo=PGVector&logoColor=%23FFFFFF)
+![Visual Studio 2022 C++](https://img.shields.io/badge/Developed%20with-Visual%20Studio%202022%20C%2B%2B-blueviolet?style=for-the-badge&logo=visual-studio&logoColor=white "Build using Visual Studio 2022 with the Desktop development with C++ workload")
 ![Static Badge](https://img.shields.io/badge/Docker-%230db7ed?style=for-the-badge&logo=Docker&logoColor=%23FFFFFF)
 ![Static Badge](https://img.shields.io/badge/CSS3-%232965f1?style=for-the-badge&logo=CSS3&logoColor=%23FFFFFF)
 ![Static Badge](https://img.shields.io/badge/TensorFlow-%23FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=%23FF6F00&labelColor=%23FFFFFF)
@@ -16,7 +17,7 @@ A **truth table** is a fundamental tool in logic and mathematics, used to determ
 
 To generate a truth table, you simply provide a logical expression or statement, such as:
 
-`P AND Q` > `P OR NOT Q` > `(P IF THEN Q) IF AND ONLY IF (NOT P OR Q)`
+`P AND Q` `P OR NOT Q` `(P IF THEN Q) IF AND ONLY IF (NOT P OR Q)`
 
 Once you provide the expression, our tool constructs the `truth table` displaying all possible truth values (**TRUE[T] or FALSE[F]**) for the variables and the resulting truth value for the entire expression.
 
@@ -51,29 +52,29 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
 
 ### Key Development Milestones
 
-- **Core Feature Implementation:**
+- **Core Feature Implementation**
 
   - User Authentication (Sign-up, Login, Password Reset): ✅ **Completed**
   - Data Persistence: ✅ **Completed**
-  - Core Business Logic Functionality: 🚧 **In Progress** (Estimated 55% done)
-  - User Profile Management: 🚧 **In Progress**
+  - Core Business Logic Functionality: 🚧 **In Progress** (Estimated 60% done)
+  - User Profile Management: 🚧 **In Progress** (Estimated 35% done)
 
-- **UI/UX Design & Integration:**
+- **UI/UX Design & Integration**
 
   - Initial Wireframes & Mockups: 🚧 **In Progress**
   - High-Fidelity UI Design: 🚧 **In Progress** (Feedback currently being integrated)
-  - Front-end Component Development: 🚧 **In Progress** (Estimated 40% done)
-  - Responsive Design Adaptation: ❌ **Planned**
+  - Front-end Component Development: 🚧 **In Progress** (Estimated 55% done)
+  - Responsive Design Adaptation: 🚧 **In Progress**
 
-- **Bug Fixing & Performance Optimization:**
+- **Bug Fixing & Performance Optimization**
 
   - Initial Bug Bash & Reporting: ✅ **Completed**
   - Critical Bug Fixes (Release Blocker): 🚧 **In Progress**
-  - Performance Profiling & Optimization: ❌ **Planned**
+  - Performance Profiling & Optimization: 🚧 **In Progress**
 
-- **Testing Phase:**
+- **Testing Phase**
 
-  - Unit Tests for Core Business Logic: 🚧 **In Progress** (55% coverage)
+  - Unit Tests for Core Business Logic: 🚧 **In Progress** (65% coverage)
   - Integration Tests for API Endpoints: 🚧 **In Progress** (Targeting 60% coverage by [9/15/2025])
   - User Acceptance Testing (UAT) Prep: ❌ **Not Started**
 
@@ -84,12 +85,17 @@ Our testing strategy employs a multi-layered approach to ensure the robustness, 
 
 ### Current Sprint/Focus
 
-**Sprint #3: Core Business Logic & Profile Management (June 23 - July 1, 2025)**
+**Sprint #3: Core Business Logic & Profile Management**
 
-Our primary focus for this sprint is to finalize the core business logic functionality and begin implementing user profile management.
+- Strategic Reprioritization: Truth Table App Development Paused: ⏩ **Blocked**
+
+Progress on the Truth Table app is currently on hold as I'm strategically re-directing my efforts toward advanced human-centric AI development. This pivot is aimed at pioneering new frontiers in AI understanding and interaction, ensuring my capabilities remain at the cutting edge of the industry's evolution demands.
+
+I'm establishing a revised timeline for the Truth Table app's resumption and I'll communicate updates as they become available. For more context on this strategic shift, please refer to [this detailed overview](https://github.com/brucethagwana/truthtable/issues/2).
 
 ### Latest Updates
 
+- **July 21, 2025:** Homepage integrated: Providing a centralized project overview with robust user authentication capabilities.
 - **June 30, 2025:** Work on the Truth Table project has been temporarily suspended.
 - **June 17, 2025:** Completed integration for data persistence.
 - **June 13, 2025:** Addressed critical login bug affecting certain user accounts.
@@ -108,4 +114,4 @@ Our next major goal is to achieve a stable beta version by [10/25/2025], followe
 
 ## License / Credits
 
-Copyright © 2025 Bruce R. Thagwana. All rights reserved.
+Copyright © 2024 Bruce R. Thagwana. All rights reserved.
