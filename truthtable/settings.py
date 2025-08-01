@@ -153,7 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Allauth settings 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/proposition/'
 ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 # Email verification settings
