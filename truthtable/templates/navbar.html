@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %} 
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin> 
+    <link href=https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'authentication/style.css' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth Table</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="logo">TRUTH TABLE</div>
+        <div class="tagline">A Logic Expression Evaluator</div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Agenda</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        {% if user.is_authenticated %}
+        <button class="search-icon-btn" aria-label="Search">🔍</button>
+        <a href="{% url 'account_logout' %}" class="sign-in-register">Log Out</a>
+        <a href="#" class="add-listings-btn">+ Add Agenda</a>
+        {% else %}
+        {% endif %} 
+        {% if not user.is_authenticated %}
+        <button class="search-icon-btn" aria-label="Search">🔍</button>
+        <a href="{% url 'account_login' %}" class="sign-in-register">Log In</a>
+        <a href="{% url 'account_signup' %}" class="sign-in-register">Sign UP</a>
+        <a href="{% url 'account_reset_password' %}" class="sign-in-register">Reset Password</a>
+        {% endif %}
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin> 
+    <link href=https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'authentication/style.css' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth Table</title>
+  </head>
+  <body>
+    <div>{% include 'navbar.html' %}</div>
+    <main>
+      <div class="concurrence">
+        <section>
+          {% if latest_antelope_list %}
+          <ul>
+            {% for antelope in object_list %}
+              <p>{% include 'astrology_list.html' %} {{ antelope.connective_and }} {% include 'compoundinterest_list.html' %}</p>
+            {% endfor %}
+        </section>
+        <table>
+        {% comment %} <tr>
+          <th>True [T]</th>
+          <th>False [F]</th>
+        </tr> {% endcomment %}
+          <tr>
+            <td>{{ reliable_and }}</td> <td>{{ reliable_and }}</td>
+            <td>{{ reliable_and }}</td> <td>{{ unreliable_and }}</td>
+            <td>{{ unreliable_and }}</td> <td>{{ reliable_and }}</td>
+            <td>{{ unreliable_and }}</td> <td>{{ unreliable_and }}</td>
+          </tr>
+        </table>
+          </ul>
+          {% else %}
+          <p>
+            Divergent perspective, requiring further clarification.
+          </p>
+          {% endif %}
+      </div>
+    </main>
+    <div>{% include 'footer.html' %}</div>
+  </body>
+</html>

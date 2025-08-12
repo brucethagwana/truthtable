@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin> 
+    <link href=https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'authentication/style.css' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth Table</title>
+  </head>
+  <body>
+    <div>{% include 'navbar.html' %}</div>
+    <main>
+      <section id="hero-section">
+        <div class="hero-content">
+          <h1>Presumed Foundational Principles</h1>
+          <p>Self-evident Propositions</p>
+          <div class="search-bar-container">
+            <div class="search-tabs">
+              {% comment %} displays quotes by AI Philosophers {% endcomment %}
+              <button class="tab active">EXTRACTS</button>
+              {% comment %} displays zodiac sign message for the particular month {% endcomment %}
+              <button class="tab">VERITIES</button>
+            </div>
+            <p class="search-prompt">Detail the compelling rational for your request! </p>
+            <div class="search-inputs">
+              <input type="text" placeholder="Excerpts">
+              <select aria-label="All Categories">
+                <option>All Categories</option>
+                <option>Categories 1</option>
+                <option>Categories 2</option>
+              </select>
+              <select aria-label="three-d">
+                <option>Phrases</option>
+                <option>$</option>
+                <option>$$</option>
+                <option>$$$</option>
+              </select>
+              <button class="search-btn" aria-label="Search">🔍 Search</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div>{% include 'footer.html' %}</div>
+  </body>
+</html>

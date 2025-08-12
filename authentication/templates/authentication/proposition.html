@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin> 
+    <link href=https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'authentication/style.css' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth Table</title>
+  </head>
+  <body>
+    <div>{% include 'navbar.html' %}</div>
+    <main>
+      <section id="hero-section">
+    <div class="category-icons">
+      <div class="category-item">
+        <div class="icon-placeholder"></div>
+        <span href="#">Biconditional</span>
+      </div>
+      <div class="category-item">
+        <div class="icon-placeholder"></div>
+        <span href="#">Conditional</span>
+      </div>
+      <div class="category-item">
+          <div class="icon-placeholder"></div>
+          <span href="#">Contradiction</span>
+      </div>
+      <div class="category-item">
+          <div class="icon-placeholder"></div>
+          <span><a href="conjunction/concurrence.html">Conjunction</a></span>
+      </div>
+      <div class="category-item">
+          <div class="icon-placeholder"></div>
+          <span href="#">Disjunction</span>
+      </div>
+      <div class="category-item">
+          <div class="icon-placeholder"></div>
+          <span href="#">Logical Equivalence</span>
+      </div>
+      <div class="category-item">
+          <div class="icon-placeholder"></div>
+          <span href="#">Negation</span>
+      </div>
+      <div class="category-item">
+          <div class="icon-placeholder"></div>
+          <span href="#">Tautology</span>
+      </div>
+      </div>
+      <div class="pagination">
+      <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}"> previous</a>
+        {% endif %}
+        </span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+        </span>
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}"> next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}"> last &raquo;</a>
+        {% endif %}
+      </span>
+    </div>
+      </section>
+    </main>
+    <div>{% include 'footer.html' %}</div>
+  </body>
+</html>
