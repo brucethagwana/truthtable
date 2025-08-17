@@ -17,7 +17,7 @@
         <section>
           {% if latest_antelope_list %}
           <ul>
-            {% for antelope in object_list %}
+            {% for antelope in latest_antelope_list %}
               <p>{% include 'astrology_list.html' %} {{ antelope.connective_and }} {% include 'compoundinterest_list.html' %}</p>
             {% endfor %}
         </section>
