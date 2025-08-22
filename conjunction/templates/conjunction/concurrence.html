@@ -22,15 +22,11 @@
             {% endfor %}
         </section>
         <table>
-        {% comment %} <tr>
-          <th>True [T]</th>
-          <th>False [F]</th>
-        </tr> {% endcomment %}
           <tr>
-            <td>{{ reliable_and }}</td> <td>{{ reliable_and }}</td>
-            <td>{{ reliable_and }}</td> <td>{{ unreliable_and }}</td>
-            <td>{{ unreliable_and }}</td> <td>{{ reliable_and }}</td>
-            <td>{{ unreliable_and }}</td> <td>{{ unreliable_and }}</td>
+            <td>{% include 'accord_list.html' %}</td> <td>{% include 'accord_list.html' %}</td>
+            <td>{% include 'accord_list.html' %}</td> <td>{% include 'accord_list.html' %}</td>
+            <td>{% include 'accord_list.html' %}</td> <td>{% include 'accord_list.html' %}</td>
+            <td>{% include 'accord_list.html' %}</td> <td>{% include 'accord_list.html' %}</td>
           </tr>
         </table>
           </ul>
