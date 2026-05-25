@@ -96,11 +96,43 @@ I'm establishing a revised timeline for the Truth Table app's resumption and I'l
 
 ### Latest Updates
 
+- **May 22, 2026:** Completed architectural blueprint for Interface Driven Design: Finalized the technical roadmap to decouple core application domain logic from high-performance compute infrastructure. This lays the groundwork for Phase 1 (functional validation) and Phase 2 scaled-out (vLLM/Triton). See the `Architectural Strategy` specifications below.
 - **July 21, 2025:** Homepage integrated: Providing a centralized project overview with robust user authentication capabilities.
 - **June 30, 2025:** Work on the Truth Table project has been temporarily suspended.
 - **June 17, 2025:** Completed integration for data persistence.
 - **June 13, 2025:** Addressed critical login bug affecting certain user accounts.
 - **June 9, 2025:** Began work on real-time core business logic functionality.
+
+## 🏷️ Architectural Strategy
+
+This repository adopts an **Interface Driven Design** approach, deliberately separating core application domain logic from the underlying high-performance compute infrastructure.
+
+To reduce integration risk, our deployment roadmap is executed in two distinct phases:
+
+### 1. Phase 1 (Current Target): Functional Domain Validation
+The application layer communicates with models via an abstract adapter interface. This allows us to rapidly iterate on business logic, data validation pipelines, and UX flows using a lightweight, standard inference wrapper without managing heavy GPU infrastructure dependencies prematurely.
+
+### 2. Phase 2 (Target Milestone): Infrastructure Scale-Out & Optimization
+Once the domain logic stabilizes, we will swap out the basic inference wrapper for a production-grade Inference Layer without altering a single line of application code. This optimization phase will focus strictly on scaling throughput and driving down compute costs via:
+
+* **In-Fight / Continuous Batching & PagedAttention:** Maximizing hardware utilization and memory efficiency.
+* **Quantization Pipelines (FP8/INT4):** VRAM footprint reduction to enable larger models on cheaper hardware configurations.
+* **Dedicated Serving Engines:** Compiling to fused CUDA kernels via specialized backends like vLLM, SGLang, or Triton Inference Server.
+
+### ⚠️ Phase 2 Integration & Risk Mitigation Notes
+
+To ensure a seamless transition between phases, our abstract adapter interface is explicitly designed to mitigate common leaky abstractions and operational bottlenecks associated with high-performance LLM engines:
+
+* **Streaming & Chunking Semantics:** The interface enforces a strict protocol for Server-Sent Events (SSE), ensuring partial tokens, stop sequences, and token counts normalize identically whether served via a lightweight API wrapper or a self-hosted backend.
+* **Metadata Pass-Through:** To preserve long-term optimization capabilities, the adapter accommodates upstream metadata (e.g., Logprobs, prompt token blocks, KV-cache metrics) without breaking application-layer validation.
+* **Quantization & Semantic Drift Testing:** Because moving to FP8/INT4 can introduce subtle shifts in formatting compliance and instruction-following, the transition will include automated regression pipelines. These pipelines will verify both structural compliance (e.g., strict JSON schema validation) and semantic alignment (e.g., preserving reasoning capability and adherence to negative constraints).
+* **Concurrency & Latency Variance under Continuous Batching:** Unlike the predictable latencies of standard Phase 1 cloud API wrappers, Phase 2's continuous batching engines introduce variable Time-to-First-Token (TTFT) and inter-token latency based on cluster load. The application layer's streaming client and UI/UX flows must be engineered to handle variable network jitter and delayed token delivery without timing out or degrading the user experience.
+* **KV-Cache Optimization & Context Hydration:** To fully leverage PagedAttention and prefix caching in Phase 2, the abstract adapter interface must explicitly segregate static system prompts from dynamic user context. This ensures the underlying high-performance engine can efficiently hash and cache prompt blocks, preventing cache thrashing and reducing TTFT at scale.
+
+> **🛑 Design Principle Note:** Always code to the interface (`AbstractLLMAdapter`), never to the implementation. If your application code requires an explicit check for whether it is talking to OpenAI or vLLM, the abstraction has leaked.
+
+
+`#inference-layer` `#ai-systems-engineering` `#api-design` `#real-time-applications` `#mlops` `#llm-serving` `#vllm` `#gpu-optimization` `#triton-inference-server` `#system-design` `ai` `#software-engineering`
 
 ### Legend
 
@@ -108,6 +140,7 @@ I'm establishing a revised timeline for the Truth Table app's resumption and I'l
 - 🚧 **In Progress:** Work is actively being done on this task.
 - ❌ **Not Started / Planned:** This task is planned for future development.
 - ⏩ **Blocked:** This task cannot proceed due to an external dependency or issue.
+- 🛑 **Design Principle:** Non-negotiable architectural requirements.
 
 ### Looking Ahead
 
