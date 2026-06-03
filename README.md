@@ -131,9 +131,6 @@ To ensure a seamless transition between phases, our abstract adapter interface i
 
 > **🛑 Design Principle Note:** Always code to the interface (`AbstractLLMAdapter`), never to the implementation. If your application code requires an explicit check for whether it is talking to OpenAI or vLLM, the abstraction has leaked.
 
-
-`#inference-layer` `#ai-systems-engineering` `#api-design` `#real-time-applications` `#mlops` `#llm-serving` `#vllm` `#gpu-optimization` `#triton-inference-server` `#system-design` `ai` `#software-engineering`
-
 ### Legend
 
 - ✅ **Completed:** This task/milestone has been successfully finished.
@@ -148,4 +145,4 @@ Our next major goal is to achieve a stable beta version by [10/25/2025], followe
 
 ## License / Credits
 
-Copyright © 2024 Bruce R. Thagwana. All rights reserved.
+Copyright © 2024 - 2026 Bruce R. Thagwana. All rights reserved.
