@@ -71,3 +71,28 @@ All active task tracking, bug reports, feature implementations, and sprint backl
    ```bash
    git clone [https://github.com/brucethagwana/truthtable.git](https://github.com/brucethagwana/truthtable.git)
    cd truthtable
+
+---
+
+## 📜 License & Credits
+
+Distributed under the **MIT License**. See [`LICENSE`](https://github.com/brucethagwana/truthtable/blob/main/LICENSE.txt) for full details.
+
+* **Author & Lead Researcher**: [Bruce Thagwana](https://github.com/brucethagwana)
+* **Core Focus**: Multi-Agent Logic Orchestration & Autonomous LLM Reasoning Research
+
+---
+
+### 💬 Citation & Acknowledgments
+
+If you use this framework or research matrix in your work, please cite it as:
+
+```bibtex
+@software{thagwana2026truthtable,
+  author = {Thagwana, Bruce},
+  title = {Truth Table: Multi-Agentic Logic & Reasoning Framework},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {[https://github.com/brucethagwana/truthtable](https://github.com/brucethagwana/truthtable)}
+}
