@@ -106,3 +106,8 @@ If you use this framework or research matrix in your work, please cite it as:
   journal = {GitHub repository},
   url = {[https://github.com/brucethagwana/truthtable](https://github.com/brucethagwana/truthtable)}
 }
+```
+---
+
+*Special thanks to the open-source community and researchers pioneering deterministic logic evaluation in multi-agent systems.*
+
