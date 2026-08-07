@@ -15,7 +15,17 @@
 ![Docker](https://img.shields.io/badge/Docker-%230db7ed?style=for-the-badge&logo=Docker&logoColor=%23FFFFFF)
 ![CSS3](https://img.shields.io/badge/CSS3-%232965f1?style=for-the-badge&logo=CSS3&logoColor=%23FFFFFF)
 
-A full-stack logic evaluation platform and research framework designed to parse Boolean logic expressions, manage vector embeddings in PGVector, and translate formal truth-table evaluation matrices into multi-agent coordination protocols and autonomous reasoning models.
+**Truth Table** is a hybrid logic-evaluation engine and multi-agent reasoning framework designed to bridge classical symbolic logic with modern probabilistic AI models. It maps complex multi-agent interactions and LLM decision pathways to formal logical truth values, delivering deterministic state evaluation, automated decision verification, and persistent semantic state memory.
+
+---
+
+## 🚀 Architecture & Key Features
+
+* **Deterministic Logic Parser**: Parses boolean and multi-valued logical expressions into verifiable truth tables and evaluation graphs.
+* **Multi-Agent Orchestration**: Directs autonomous agent consensus using formal logical bounds rather than purely probabilistic voting.
+* **Semantic Vector Memory**: Integrates **PGVector** with **PostgreSQL** to perform similarity searches over reasoning trees and logical assertions.
+* **High-Performance Native Core**: Built with **C++** extensions and modern **Python / Django** backends for computational efficiency.
+* **Deep Learning Integration**: Leverages **PyTorch** and **TensorFlow** models to align neural representations with symbolic constraints.
 
 ---
 
